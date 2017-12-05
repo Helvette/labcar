@@ -14,18 +14,32 @@
 <body>
 	<nav>
 		<div class="nav-wrapper">
+			<!-- Visible Structure -->
 			<a href="#" class="brand-logo"><img src="assets/images/logoForma.png" alt="LabCar"></a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="sass.html">Inicio</a></li>
-				<li><a href="badges.html">Conduce</a></li>
-				<li><a href="collapsible.html">Inicia Sesión</a></li>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Conduce</a></li>
+				<li><a href="#">Inicia Sesión</a></li>
 			</ul>
+
+			<!-- Dropdown Menú -->
+ 			<a class="dropdown-button btn hide-on-large-only" href="#" data-activates="dropdown1"><i class="fa fa-bars" aria-hidden="true"></i></a>
+
+  		<!-- Dropdown Structure Hidden-->
+  		<ul id="dropdown1" class="dropdown-content s12 m12 l12">
+    		<li><a href="#!">one</a></li>
+    		<li><a href="#!">two</a></li>
+    		<li class="divider"></li>
+    		<li><a href="#!">three</a></li>
+    		<li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+    		<li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+  		</ul>
 		</div>
 	</nav>
 
 	<section class="img-section container-fluid">
 		<div class="row">
-			<div class="col l5 offset-l7 form amber darken-1 hide-on-small-only">
+			<div class="col l5 offset-l7 form amber darken-1 hide-on-med-and-down">
 				<h2>Disfruta del viaje</h2>
 				<h2>Eres dueño de tu tiempo</h2>
 				<p>Viaja con <img src="assets/images/logoBlanco.png" alt="LabCar"></p>
@@ -35,7 +49,7 @@
 				<hr>
 				<button>Conviértete en un conductor</button>
 			</div>
-			<div class="col s10 offset-s2 hide-on-med-and-up">
+			<div class="col s10 offset-s2 form amber darken-1 hide-on-large-only">
 				<h2>Comienza a viajar con <img src="assets/images/logoBlanco.png" alt="LabCar"></h2>
 				<button>Descarga el app</button>
 			</div>
@@ -44,11 +58,12 @@
 
 	<section class="section-two container-fluid amber darken-1">
 		<div class="row">
-			<div class="white-border col l10 valign-wrapper">
-				<div class="col l4 offset-l1">
-					<img src="assets/images/iPhone6Plus.png" alt="Cellphone" class="responsive-img">
+			<div class="white-border col s12 l10 valign-wrapper">
+				<div class="col s12 m12 l7 cellphone-background center-align">
+					<h2 class="hide-on-large-only">La nueva app</h2>
+					<img src="assets/images/iPhone6Plus.png" alt="iPhone" class="responsive-img">
 				</div>
-				<div class="col l5 offset-l1">
+				<div class="col l5 hide-on-med-and-down">
 					<h2>Descarga la nueva app</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos aspernatur sunt, ut tenetur cumque dolor nam sed.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae numquam ut unde provident assumenda minus, hic officia.</p>
@@ -71,45 +86,48 @@
 
 	<section class="container-fluid amber darken-1">
 		<div class="row m-container">
-			<div class="col l4">
+			<div class="col s12 m12 l4">
 				<h2>Tarifas</h2>
 				<p>Consulta las tarifas LabCar aquí</p>
-				<div class="row">
-				  <form class="col s12">
+				<div class="">
+				  <form>
 				    <div class="row">
-				      <div class="input-field col s12 valign-wrapper">
+				      <div class="input-field valign-wrapper">
 				        <img src="assets/images/shape.png" alt="" class="prefix img-input">
 				        <input type="text" class="validate" placeholder="Ingrese su punto de partida">
 				      </div>
 				    </div>
 				    <div class="row">
-				      <div class="input-field col s12 valign-wrapper">
+				      <div class="input-field valign-wrapper">
 				        <img src="assets/images/shape2.png" alt="" class="prefix img-input">
 				        <input type="text" class="validate" placeholder="Ingrese su destino">
 				      </div>
 				    </div>
 				    <div class="row">
-				    	<div class="cols12 center-align">
+				    	<div class="col s12 l12 center-align">
 				    		<button>¡Trazar ruta!</button>
 				    	</div>
 				    </div>
 				  </form>
 				</div>
 			</div>
-			<div class="col l6 offset-l2">
-				<img src="" alt="">
+
+			<div class="col s12 m12 l6 offset-l2 center-align">
+				<div class="frame-container">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13320.941608687654!2d-70.63951309999999!3d-33.41710665!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1512478873560" frameborder="" allowfullscreen></iframe>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<footer class="container.fluid grey darken-4">
+	<footer class="container-fluid grey darken-4">
 		<div class="row footer m-container col s12">
 			<h2>Lab&#60;ar</h2>
-			<hr class="col l12 s12">
+			<div class="divider"></div>
 		</div>
-		<div class="row footer m-container col s12">
-			<div class="col l3">
-				<ul>
+		<div class="row footer m-container col s12 bottom-align">
+			<div class="col l3 icons-container hide-on-med-and-down">
+				<ul class="icons">
 					<li class="left"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<li class="left"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 					<li class="left"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
@@ -117,8 +135,8 @@
 					<li class="left"><a href="#"><i class="fa fa-play" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
-			<div class="col l3">
-				<ul>
+			<div class="col l3 s6">
+				<ul class="list">
 					<li><a href="#">Viaja</a></li>
 					<li><a href="#">Conduce</a></li>
 					<li><a href="#">Ciudades</a></li>
@@ -129,8 +147,8 @@
 					<li><a href="#">Seguridad</a></li>
 				</ul>
 			</div>
-			<div class="col l3 hide-on-small-only">
-				<ul>
+			<div class="col l3 hide-on-med-and-down">
+				<ul class="list">
 					<li><a href="#">Oportunidades</a></li>
 					<li><a href="#">Nuestra historia</a></li>
 					<li><a href="#">API de LabCar</a></li>
@@ -141,15 +159,24 @@
 					<li><a href="#">Coders</a></li>
 				</ul>
 			</div>
-			<div class="col l3">
+			<div class="col l3 s6 app-container">
+				<div class="col l3 icons-container hide-on-large-only">
+					<ul class="icons">
+						<li class="left"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="left"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="left"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="left"><a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a></li>
+						<li class="left"><a href="#"><i class="fa fa-play" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
 				<ul>
-					<li><img src="assets/images/appstore.png" alt="App Store"></li>
-					<li><img src="assets/images/enBadgeWebGeneric.png" alt="Google Play"></li>
+					<li><img src="assets/images/appstore.png" alt="App Store" class="responsive-img"></li>
+					<li><img src="assets/images/enBadgeWebGeneric.png" alt="Google Play" class="responsive-img"></li>
 				</ul>
 			</div>
-			<hr class="col l12 s12">
 		</div>
 		<div class="row footer m-container">
+			<div class="divider"></div>
 			<p>© 2017 LabCar technologies Inc</p>
 		</div>
 	</footer>
@@ -158,6 +185,7 @@
 
 	<!-- Link íconos -->
 	<script src="https://use.fontawesome.com/69bfbe7ab9.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<!-- Link CDN JS Materialize -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </body>
