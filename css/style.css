@@ -1,0 +1,82 @@
+body {
+	margin: 0;
+}
+
+nav {
+	height: auto;
+	background-color: white;
+	box-shadow: none;
+}
+
+.row {
+	margin-bottom: 0;
+}
+
+.nav-wrapper {
+	padding: 30px 65px;
+}
+
+nav .brand-logo {
+	position: initial;
+}
+
+.nav-wrapper img {
+	max-width: 130px;
+}
+
+nav ul a {
+	color: #333;
+}
+
+nav ul a:hover {
+	border-radius: 3px;
+}
+
+.container-fluid {
+	width: 100%;
+}
+
+.img-section {
+	background-image: url(../assets/images/taxi.jpg);
+	background-size: cover;
+	background-position: center bottom;
+	padding: 150px 0;
+}
+
+.img-section .row {
+	margin: 0;
+}
+
+div.col.l5.offset-l7.form {
+	padding: 40px;
+	color: white;
+}
+
+.section-two {
+	padding: 40px 0;
+}
+
+div.white-border.col.l10.valign-wrapper {
+	padding: 40px;
+	border: 1px solid white;
+	border-left: 0;
+}
+
+.section-two .responsive-img {
+	width: 100%;
+}
+
+.section-three {
+	background-image: url(../assets/images/conduce.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.filter-container.col.l4.offset-l8 {
+	background: rgba(0,0,0,0.5);
+	padding: 80px 40px 200px 40px;
+}
+
+.filter-container .content {
+	color: red;
+}
