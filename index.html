@@ -19,9 +19,8 @@
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<li><a href="#">Inicio</a></li>
 				<li><a href="#">Conduce</a></li>
-				<li><a href="#">Inicia Sesión</a></li>
+				<li class="modal-trigger" data-target="modal1"><a href="#">Inicia Sesión</a></li>
 			</ul>
-
 			<!-- Dropdown Menú -->
 			<div class="dropdown-menu right">
 				<a id="drop-button" class="dropdown-button btn hide-on-large-only" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
@@ -34,14 +33,13 @@
 					<div class="divider grey lighten-1"></div>
 					<a href="#">Conduce</a>
 					<div class="divider grey lighten-1"></div>
-					<a href="#">Inicia Sesión</a>
+					<div class="modal-trigger" data-target="modal1"><a href="">Inicia Sesión</a></div>
+					<div class="divider grey lighten-1"></div>
+					<div class="modal-trigger" data-target="modal2"><a href="">Regístrate</a></div>
 				</div>
 			</section>
 	</nav>
-
-
-
-
+	<!-- Primera sección -->
 	<section class="img-section container-fluid">
 		<div class="row">
 			<div class="col l5 offset-l7 form amber darken-1 hide-on-med-and-down">
@@ -51,25 +49,26 @@
 					<p>Viaja con</p>
 					<img src="assets/images/logoBlanco.png" alt="LabCar">
 				</div>
-				<button class="uppercase">Regístrate</button>
+				<button class="uppercase modal-trigger" data-target="modal2">Regístrate</button>
 				<div class="row valign-wrapper">
 					<hr class="col l5">
 					<p class="col 2">O bien</p>
 					<hr class="col l5">
 				</div>
-
-				<button>Conviértete en un conductor</button>
+				<button data-target="modal3" class="modal-trigger">Conviértete en un conductor</button>
 			</div>
+			<!-- Oculto en Desktop -->
 			<div class="col s10 offset-s2 form amber darken-1 hide-on-large-only">
 				<h3>Comienza a viajar con <img src="assets/images/logoBlanco.png" alt="LabCar"></h3>
 				<button>Descarga el app</button>
 			</div>
 		</div>
 	</section>
-
+	<!-- Segunda sección -->
 	<section class="section-two container-fluid amber darken-1">
 		<div class="row">
 			<div class="white-border col s12 l10 valign-wrapper">
+				<!-- Oculto en desktop, excepción imagen -->
 				<div class="col s12 m12 l7 cellphone-background center-align">
 					<h3 class="hide-on-large-only">La nueva app</h3>
 					<img src="assets/images/iPhone6Plus.png" alt="iPhone" class="responsive-img">
@@ -83,19 +82,19 @@
 			</div>
 		</div>
 	</section>
-
+	<!-- Tercera sección -->
 	<section class="section-three container-fluid">
 		<div class="row">
 			<div class="filter-container col l4 offset-l8 s12">
 				<div class="content">
 					<h3>Conduce cuando quieras</h3>
 					<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-					<button>Conviértete en conductor</button>
+					<button data-target="modal3" class="modal-trigger">Conviértete en conductor</button>
 				</div>
 			</div>
 		</div>
 	</section>
-
+	<!-- Cuarta sección -->
 	<section class="section-four container-fluid amber darken-1">
 		<div class="row m-container">
 			<div class="col s12 m12 l5">
@@ -123,7 +122,7 @@
 					</form>
 				</div>
 			</div>
-
+			<!-- Mapa -->
 			<div class="col s12 m12 l6 offset-l1 right-align">
 				<div class="frame-container">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13320.941608687654!2d-70.63951309999999!3d-33.41710665!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1512478873560" frameborder="" allowfullscreen></iframe>
@@ -131,13 +130,14 @@
 			</div>
 		</div>
 	</section>
-
+	<!-- Footer -->
 	<footer class="container-fluid grey darken-4">
 		<div class="row footer m-container col s12">
 			<h2>Lab&#60;ar</h2>
 			<div class="divider"></div>
 		</div>
 		<div class="row footer m-container col s12 bottom-align">
+			<!-- Oculto en mobile -->
 			<div class="col l3 icons-container hide-on-med-and-down">
 				<ul class="icons">
 					<li class="left"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -159,6 +159,7 @@
 					<li><a href="#">Seguridad</a></li>
 				</ul>
 			</div>
+			<!-- Oculto en mobile -->
 			<div class="col l3 hide-on-med-and-down">
 				<ul class="list">
 					<li><a href="#">Oportunidades</a></li>
@@ -172,6 +173,7 @@
 				</ul>
 			</div>
 			<div class="col l3 s6 app-container">
+				<!-- Se muestra en mobile -->
 				<div class="col l3 icons-container hide-on-large-only">
 					<ul class="icons">
 						<li class="left"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -193,28 +195,177 @@
 		</div>
 	</footer>
 
-	  <!-- Modal Trigger 
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
-  Modal Structure 
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div> -->
-
-
+	<!-- MODALS ESTRUCTURA -->
+	<!-- Inicia Sesión -->
+	<div class="modal-one">
+		<div id="modal1" class="modal">
+			<div class="modal-content center-align">
+				<div class="row">
+					<button class="modal-close right"><i class="fa fa-times" aria-hidden="true"></i></button>
+				</div>
+				<img src="assets/images/generic-profile.png" alt="Profile Picture" class="profile circle">
+				<div class="divider"></div>
+				<div class="row">
+					<div class="input-field col l10 offset-l1">
+						<input id="password" type="password">
+						<label for="password">Password</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col l10 offset-l1">
+						<input id="email" type="email">
+						<label for="email">Email</label>
+					</div>
+				</div>
+				<div class="row">
+					<button class="uppercase login modal-close">Login</button>
+				</div>
+				<div class="row">
+					<p>¿Olvidaste tu contraseña? <a href="#">Click Aquí</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Regítrate -->
+	<div class="modal-two">
+		<div id="modal2" class="modal">
+			<div class="modal-content center-align">
+				<div class="row">
+					<button class="modal-close right"><i class="fa fa-times" aria-hidden="true"></i></button>
+				</div>
+				<div class="row col l12">
+					<button class="col l12 already modal-trigger modal-close" data-target="modal1">¿Ya tienes una cuenta?</button>
+				</div>
+				<div class="row">
+					<p class="uppercase">O crea una cuenta nueva</p>
+				</div>
+				<div class="row">
+					<div class="input-field col l6">
+						<input id="name" type="text">
+						<label for="name">Nombre</label>
+					</div>
+					<div class="input-field col l6">
+						<input id="last-name" type="text">
+						<label for="last-name">Apellido</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col l12">
+						<input id="email" type="email">
+						<label for="email">Email</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col l12">
+						<input id="phone" type="tel">
+						<label for="phone">Teléfono</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col l12">
+						<input id="pass" type="password">
+						<label for="pass">Contraseña</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col l12">
+						<input id="city" type="text">
+						<label for="city">Ciudad</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col l12">
+						<input id="code" type="number">
+						<label for="code">Código de invitación</label>
+					</div>
+				</div>
+				<div class="row">
+					<button class="col l12 how">¿Cómo te enteraste de nosotros? <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+				</div>
+				<div class="row">
+					<button class="uppercase col l12 modal-close">Enviar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Conduce -->
+	<div class="modal-three">
+		<div id="modal3" class="modal">
+			<div class="modal-content center-align">
+				<div class="row">
+					<button class="modal-close right"><i class="fa fa-times" aria-hidden="true"></i></button>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<select>
+							<option value="" disabled selected>Elige tu opción</option>
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+						</select>
+						<label>¿Tiene tu auto vehículo de 4 puertas?</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<select>
+							<option value="" disabled selected>Elige tu opción</option>
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+						</select>
+						<label>Elige la marca del vehículo</label>
+						<p>¿No ves tu vehículo en la lista? Envía un correo electrónico a <a href="">sociosmdv@uber.com</a></p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<select>
+							<option value="" disabled selected>Elige tu opción</option>
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+						</select>
+						<label>Modelo</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<select>
+							<option value="" disabled selected>Elige tu opción</option>
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+						</select>
+						<label>Año</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<select>
+							<option value="" disabled selected>Elige tu opción</option>
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+						</select>
+						<label>Número de la matrícula</label>
+						<p>La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+					</div>
+				</div>
+				<div class="row">
+					<button class="col l12 uppercase modal-close">Enviar</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Link íconos -->
 	<script src="https://use.fontawesome.com/69bfbe7ab9.js"></script>
-		<!-- Link a mi archivo JS -->
-	<script src="js/app.js"></script>
+	<!-- JQuery -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<!-- Link CDN JS Materialize -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<!-- Link a mi archivo JS -->
+	<script src="js/app.js"></script>
 </body>
 </html>
