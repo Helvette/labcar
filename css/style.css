@@ -79,10 +79,6 @@ nav ul a:hover {
 	border-radius: 3px;
 }
 
-nav .dropdown-button.btn {
-	
-}
-
 .uppercase {
 	text-transform: uppercase;
 }
@@ -440,8 +436,6 @@ button.col.l12 {
 	margin-bottom: 15px;
 }
 
-
-
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
@@ -475,10 +469,6 @@ button.col.l12 {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
-
-
-
-
 
 @media (max-width: 600px) {
 	nav {
