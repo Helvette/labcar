@@ -1,11 +1,13 @@
 body {
 	margin: 0;
+	position: relative;
 }
 
 nav {
-	height: auto;
 	background-color: white;
 	box-shadow: none;
+	position: fixed;
+	z-index: 1000;
 }
 
 .row {
@@ -13,15 +15,60 @@ nav {
 }
 
 .nav-wrapper {
-	padding: 30px 65px;
+	padding: 0 65px;
+
 }
 
-nav .brand-logo {
-	position: initial;
+.logo {
+	height: 56px;
+	width: 130px;
+	display: inline-block;
+	background-image: url(../assets/images/logoForma.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-.nav-wrapper img {
-	max-width: 130px;
+.dropdown-button.btn.hide-on-large-only {
+	box-shadow:none;
+	background-color: #ffb300;
+	border: 1px solid #ffb300;
+	color: black;
+}
+
+.dropdown-button.btn.hide-on-large-only:active {
+	background-color: white;
+	color: #ffb300;
+}
+
+#hide-menu {
+	position: absolute;
+	margin: 0;
+	width: 100%;
+	top: 56px;
+	background-color: white;
+	box-shadow: 0px 6px 18px 0px rgba(50, 50, 50, 0.81);
+}
+
+.invisible {
+	display: none;
+}
+
+#hide-menu a {
+	padding: 0 5%;
+	display: block;
+	color: black;
+	line-height: 60px;
+	font-size: 18px;
+	transition: 0.4s;
+}
+
+#hide-menu a:hover, #hide-menu a:active {
+	background-color: rgba(0,0,0,0.1);
+}
+
+#hide-menu .divider {
+	margin: 0;
 }
 
 nav ul a {
@@ -33,7 +80,87 @@ nav ul a:hover {
 }
 
 nav .dropdown-button.btn {
-	float: right;
+	
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.small {
+	font-size: 14px;
+	font-weight: 600;
+	padding: 10px 30px;
+	border-radius: 3px;
+}
+
+hr {
+	border: 1px solid white;
+ }
+
+button {
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	color: black;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 9px 15px;
+	outline-style: none;
+}
+
+button:active, button:focus {
+	background-color: #ffb300;
+	color: white;
+}
+
+h2 {
+	font-size: 35px;
+	font-weight: 500;
+	margin: 0;
+	color: white;
+}
+
+h3 {
+	font-size: 32px;
+	font-weight: 500;
+	margin: 0;
+	color: white;
+}
+
+.travel {
+	padding: 30px 0 20px 0;
+}
+
+.travel p {
+	display:inline-block;
+	margin: 0;
+	padding-right: 8px;
+	line-height: 20px;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.travel img {
+	max-height: 20px;
+}
+
+.col.s10.offset-s2.form.amber.darken-1.hide-on-large-only {
+	padding: 30px;
+}
+
+.col.s10.offset-s2.form.amber.darken-1.hide-on-large-only h3 {
+	display: inline-block;
+	line-height: 35px;
+}
+
+.col.s10.offset-s2.form.amber.darken-1.hide-on-large-only h3 img {
+	max-height: 20px;
+	margin-left: 10px;
+}
+
+.col.s10.offset-s2.form.amber.darken-1.hide-on-large-only button {
+	margin: 40px 0 10px 0;
 }
 
 .container-fluid {
@@ -43,8 +170,8 @@ nav .dropdown-button.btn {
 .img-section {
 	background-image: url(../assets/images/taxi.jpg);
 	background-size: cover;
-	background-position: center bottom;
-	padding: 150px 0;
+	background-position: 50% 95%;
+	padding: 200px 0 150px 0;
 }
 
 .img-section .row {
@@ -54,6 +181,26 @@ nav .dropdown-button.btn {
 div.col.l5.offset-l7.form {
 	padding: 40px;
 	color: white;
+}
+
+.section-two p {
+	color: white;
+	font-size: 23px;
+	font-weight: 400;
+}
+
+.section-two h3.hide-on-large-only {
+	margin: 10px 0;
+}
+
+.section-two p.hide-on-large-only {
+	margin: 10px 0 0 0;
+}
+
+.section-three p {
+	color: white;
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .section-two {
@@ -83,7 +230,7 @@ div.white-border.col.l10.valign-wrapper {
 }
 
 .m-container {
-	width: 90%;
+	width: 85%;
 	margin: 0 auto;
 }
 
@@ -110,17 +257,84 @@ div.white-border.col.l10.valign-wrapper {
 	height: 430px; 
 }
 
+.section-four p {
+	font-size: 19px;
+	color: white;
+}
+
+.section-four input.validate {
+	height: 25px;
+	border: 1px solid white;
+	border-radius: 10px;
+	margin-bottom: 0;
+	padding: 10px;
+}
+
+.section-four input.validate::placeholder {
+	font-size: 16px;
+	font-weight: 400;
+	color: white;
+}
+
+.section-four form button {
+	margin: 30px 0;
+}
+
+.section-four input[type=text].validate:focus {
+	background-color: white;
+	border: 1px solid #ffb300;
+	border-bottom: 1px solid #ffb300;
+	box-shadow: none;
+}
+
+footer {
+	padding: 80px 0;
+}
+
+footer p {
+	padding: 10px 0;
+	color: white;
+}
+
 .row.footer.m-container.bottom-align {
 	display: table;
+}
+
+.row.footer.m-container.bottom-align div.col {
+	padding: 0;
 }
 
 div.col.l3.icons-container, div.col.l3.app-container {
 	height: 100%;
 	display: table-cell;
 	vertical-align: bottom;
-	background-color: red;
 	float: none;
 	clear: both;
+}
+
+div.col.l3.icons-container li {
+	font-size: 14px;
+	padding: 10px 12px 10px 0;
+}
+
+ul.list li {
+	line-height: 40px;
+}
+
+div.col.l3.app-container {
+	margin-bottom: 10px;
+}
+
+div.divider {
+	margin: 10px 0;
+}
+
+div.col.l3.app-container ul li {
+	padding: 10px;
+}
+
+div.col.l3.icons-container.hide-on-large-only li {
+	padding-bottom: 35px;
 }
 
 .row.footer.m-container.bottom-align div.col.l3 {
@@ -128,24 +342,51 @@ div.col.l3.icons-container, div.col.l3.app-container {
 	float: none;
 }
 
+.row.footer.m-container.bottom-align a {
+	color: white;
+}
+
 div.col.l3.app-container ul {
 	margin: 0;
 }
 
+.row.footer.m-container.bottom-align a:hover {
+	color: #616161;
+}
+
 
 @media (max-width: 600px) {
+	nav {
+		width: 100%;
+	}
+	.nav-wrapper {
+		width: 95%;
+		margin: 0 auto;
+		padding: 0;
+	}
+
 	.frame-container iframe {
 		padding: 5px;
 		border: 1px solid white;
 		width: 100%;
-		height: auto; 
+		height: auto;
 	}
 
 	.white-border.col.s12.l10.valign-wrapper {
-		padding: 50px;
+		padding: 40px;
+		width: 100%;
+		border: 1px solid white;
+	}
+
+	.section-two div.row {
+		width: 95%;
 	}
 
 	div.col.l3.icons-container, div.col.l3.app-container {
 		vertical-align: top;
+	}
+
+	.m-container {
+		width: 95%;
 	}
 }

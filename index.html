@@ -14,8 +14,8 @@
 <body>
 	<nav>
 		<div class="nav-wrapper">
-			<!-- Visible Structure -->
-			<a href="#" class="brand-logo"><img src="assets/images/logoForma.png" alt="LabCar"></a>
+			<!-- Estructura visible -->
+			<a href="#" class="logo"></a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<li><a href="#">Inicio</a></li>
 				<li><a href="#">Conduce</a></li>
@@ -23,34 +23,45 @@
 			</ul>
 
 			<!-- Dropdown Menú -->
- 			<a class="dropdown-button btn hide-on-large-only" href="#" data-activates="dropdown1"><i class="fa fa-bars" aria-hidden="true"></i></a>
-
-  		<!-- Dropdown Structure Hidden-->
-  		<ul id="dropdown1" class="dropdown-content s12 m12 l12">
-    		<li><a href="#!">one</a></li>
-    		<li><a href="#!">two</a></li>
-    		<li class="divider"></li>
-    		<li><a href="#!">three</a></li>
-    		<li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-    		<li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-  		</ul>
+			<div class="dropdown-menu right">
+				<a id="drop-button" class="dropdown-button btn hide-on-large-only" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			</div>
 		</div>
+			<!-- Estructura oculta. Dropdown content -->
+			<section class="container-fluid hide-on-large-only">
+				<div id="hide-menu" class="row invisible">
+					<a href="#">Inicio</a>
+					<div class="divider grey lighten-1"></div>
+					<a href="#">Conduce</a>
+					<div class="divider grey lighten-1"></div>
+					<a href="#">Inicia Sesión</a>
+				</div>
+			</section>
 	</nav>
+
+
+
 
 	<section class="img-section container-fluid">
 		<div class="row">
 			<div class="col l5 offset-l7 form amber darken-1 hide-on-med-and-down">
 				<h2>Disfruta del viaje</h2>
 				<h2>Eres dueño de tu tiempo</h2>
-				<p>Viaja con <img src="assets/images/logoBlanco.png" alt="LabCar"></p>
-				<button>Regístrate</button>
-				<hr>
-				<p>O bien</p>
-				<hr>
+				<div class="row travel valign-wrapper">
+					<p>Viaja con</p>
+					<img src="assets/images/logoBlanco.png" alt="LabCar">
+				</div>
+				<button class="uppercase">Regístrate</button>
+				<div class="row valign-wrapper">
+					<hr class="col l5">
+					<p class="col 2">O bien</p>
+					<hr class="col l5">
+				</div>
+
 				<button>Conviértete en un conductor</button>
 			</div>
 			<div class="col s10 offset-s2 form amber darken-1 hide-on-large-only">
-				<h2>Comienza a viajar con <img src="assets/images/logoBlanco.png" alt="LabCar"></h2>
+				<h3>Comienza a viajar con <img src="assets/images/logoBlanco.png" alt="LabCar"></h3>
 				<button>Descarga el app</button>
 			</div>
 		</div>
@@ -60,13 +71,14 @@
 		<div class="row">
 			<div class="white-border col s12 l10 valign-wrapper">
 				<div class="col s12 m12 l7 cellphone-background center-align">
-					<h2 class="hide-on-large-only">La nueva app</h2>
+					<h3 class="hide-on-large-only">La nueva app</h3>
 					<img src="assets/images/iPhone6Plus.png" alt="iPhone" class="responsive-img">
+					<p class="hide-on-large-only">Llega a tu destino aun más rápido</p>
 				</div>
 				<div class="col l5 hide-on-med-and-down">
-					<h2>Descarga la nueva app</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos aspernatur sunt, ut tenetur cumque dolor nam sed.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vitae numquam ut unde provident assumenda minus, hic officia.</p>
+					<h3>Descarga la nueva app</h3>
+					<p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+					<p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente dónde ir.</p>
 				</div>
 			</div>
 		</div>
@@ -76,43 +88,43 @@
 		<div class="row">
 			<div class="filter-container col l4 offset-l8 s12">
 				<div class="content">
-					<h2>Conduce cuando quieras</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, veritatis autem repellat harum.</p>
+					<h3>Conduce cuando quieras</h3>
+					<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
 					<button>Conviértete en conductor</button>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="container-fluid amber darken-1">
+	<section class="section-four container-fluid amber darken-1">
 		<div class="row m-container">
-			<div class="col s12 m12 l4">
-				<h2>Tarifas</h2>
+			<div class="col s12 m12 l5">
+				<h3>Tarifas</h3>
 				<p>Consulta las tarifas LabCar aquí</p>
 				<div class="">
-				  <form>
-				    <div class="row">
-				      <div class="input-field valign-wrapper">
-				        <img src="assets/images/shape.png" alt="" class="prefix img-input">
-				        <input type="text" class="validate" placeholder="Ingrese su punto de partida">
-				      </div>
-				    </div>
-				    <div class="row">
-				      <div class="input-field valign-wrapper">
-				        <img src="assets/images/shape2.png" alt="" class="prefix img-input">
-				        <input type="text" class="validate" placeholder="Ingrese su destino">
-				      </div>
-				    </div>
-				    <div class="row">
-				    	<div class="col s12 l12 center-align">
-				    		<button>¡Trazar ruta!</button>
-				    	</div>
-				    </div>
-				  </form>
+					<form>
+						<div class="row">
+							<div class="input-field valign-wrapper">
+								<img src="assets/images/shape.png" alt="" class="prefix img-input">
+								<input type="text" class="validate" placeholder="Ingrese su punto de partida">
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field valign-wrapper">
+								<img src="assets/images/shape2.png" alt="" class="prefix img-input">
+								<input type="text" class="validate" placeholder="Ingrese su destino">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12 l12 center-align">
+								<button class="uppercase small">¡Trazar ruta!</button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 
-			<div class="col s12 m12 l6 offset-l2 center-align">
+			<div class="col s12 m12 l6 offset-l1 right-align">
 				<div class="frame-container">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13320.941608687654!2d-70.63951309999999!3d-33.41710665!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1512478873560" frameborder="" allowfullscreen></iframe>
 				</div>
@@ -170,8 +182,8 @@
 					</ul>
 				</div>
 				<ul>
-					<li><img src="assets/images/appstore.png" alt="App Store" class="responsive-img"></li>
-					<li><img src="assets/images/enBadgeWebGeneric.png" alt="Google Play" class="responsive-img"></li>
+					<li><a href="#"><img src="assets/images/appstore.png" alt="App Store" class="responsive-img"></a></li>
+					<li><a href="#"><img src="assets/images/enBadgeWebGeneric.png" alt="Google Play" class="responsive-img"></a></li>
 				</ul>
 			</div>
 		</div>
@@ -181,10 +193,26 @@
 		</div>
 	</footer>
 
+	  <!-- Modal Trigger 
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+  Modal Structure 
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div> -->
+
 
 
 	<!-- Link íconos -->
 	<script src="https://use.fontawesome.com/69bfbe7ab9.js"></script>
+		<!-- Link a mi archivo JS -->
+	<script src="js/app.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<!-- Link CDN JS Materialize -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
