@@ -47,7 +47,7 @@ nav {
 	width: 100%;
 	top: 56px;
 	background-color: white;
-	box-shadow: 0px 6px 18px 0px rgba(50, 50, 50, 0.81);
+	box-shadow:  0px 18px 30px 0px rgba(50, 50, 50, 0.57);
 }
 
 .invisible {
@@ -100,7 +100,7 @@ hr {
 
 button {
 	background-color: white;
-	border: none;
+	border: 1px solid white;
 	border-radius: 5px;
 	color: black;
 	font-size: 18px;
@@ -141,10 +141,6 @@ h3 {
 	font-size: 20px;
 }
 
-.travel img {
-	max-height: 20px;
-}
-
 .col.s10.offset-s2.form.amber.darken-1.hide-on-large-only {
 	padding: 30px;
 }
@@ -156,7 +152,6 @@ h3 {
 
 .col.s10.offset-s2.form.amber.darken-1.hide-on-large-only h3 img {
 	max-height: 20px;
-	margin-left: 10px;
 }
 
 .col.s10.offset-s2.form.amber.darken-1.hide-on-large-only button {
@@ -351,8 +346,138 @@ div.col.l3.app-container ul {
 }
 
 .row.footer.m-container.bottom-align a:hover {
-	color: #616161;
+	color: #ffb300;
 }
+
+.profile {
+	max-width: 150px;
+}
+
+.modal.open {
+	width: 500px;
+	max-height: 80%;
+}
+
+.modal .modal-content {
+	padding-top: 15px;
+}
+
+.modal-content .input-field input[type=text]:focus,
+.modal-content .input-field input[type=password]:focus,
+.modal-content .input-field input[type=email]:focus,
+.modal-content .input-field input[type=tel]:focus,
+.modal-content .input-field input[type=number]:focus {
+	border-bottom: 1px solid #ffb300;
+	box-shadow: 0 1px 0 0 #ffb300;
+}
+
+.modal-content .input-field input[type=text]:focus+label,
+.modal-content .input-field input[type=password]:focus+label,
+.modal-content .input-field input[type=email]:focus+label,
+.modal-content .input-field input[type=tel]:focus+label,
+.modal-content .input-field input[type=number]:focus+label {
+	color: #ffb300;
+}
+
+.modal-content a {
+	color: #ffb300;
+}
+
+.modal-content a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+.modal-content button.modal-close.right {
+	padding: 0;
+}
+
+button.uppercase.login {
+	background-color: #ffb300;
+	border: 1px solid ;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+button.uppercase.login:active {
+	background-color: white;
+	border: 1px solid #ffb300;
+	color: black;
+}
+
+button.uppercase.col.l12 {
+	background-color: #ffb300;
+	color: white;
+}
+
+button.col.l12 {
+	padding: 12px;
+}
+
+.modal-three .modal-content input.select-dropdown {
+	margin-bottom: 0;
+}
+
+.modal-three .modal-content p {
+	font-size: 12px;
+	text-align: left;
+	margin: 0;
+}
+
+.modal-three .row {
+	margin-bottom: 25px;
+}
+
+.modal-two button.col.l12.already {
+	background-color: black;
+	color: white;
+}
+
+.modal-two button.col.l12.how {
+	background-color: #a3a3a3;
+	color: black;
+	margin-bottom: 15px;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #a3a3a3;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+
 
 
 @media (max-width: 600px) {
@@ -369,7 +494,7 @@ div.col.l3.app-container ul {
 		padding: 5px;
 		border: 1px solid white;
 		width: 100%;
-		height: auto;
+		height: 300px;
 	}
 
 	.white-border.col.s12.l10.valign-wrapper {
@@ -387,6 +512,10 @@ div.col.l3.app-container ul {
 	}
 
 	.m-container {
-		width: 95%;
+		width: 90%;
+	}
+
+	.row.m-container:not(.footer), footer {
+		padding: 40px 0;
 	}
 }
